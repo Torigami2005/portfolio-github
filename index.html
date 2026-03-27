@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eman Torr — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <!-- ── CURSOR ── -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <div class="nav-logo">Eman Torr Berjame</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#affiliations">Affiliations</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#education" onclick="closeMobile()">Education</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#affiliations" onclick="closeMobile()">Affiliations</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-bg-text">DEV</div>
+
+    <div class="hero-left">
+      <div class="hero-tag fade-in animated">
+        <span></span> Available for Opportunities
+      </div>
+      <h1 class="hero-name fade-in animated delay-1">Eman Torr Berjame</h1>
+      <p class="hero-role fade-in animated delay-2">&gt; BS Information Technology — AdDU</p>
+      <p class="hero-desc fade-in animated delay-3">
+        Passionate information technology student building meaningful digital experiences.
+        I love crafting clean code, exploring emerging technologies, and turning
+        complex problems into elegant solutions.
+      </p>
+      <div class="hero-cta fade-in animated delay-4">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-folder-open"></i> View Projects</a>
+        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-right fade-in animated delay-2">
+      <div class="photo-frame">
+        <!-- Replace the placeholder div below with: <img src="your-photo.jpg" alt="[Your Name]"> -->
+        <div class="photo-inner">
+          <div class="photo-placeholder">
+            <i class="fa-solid fa-user"></i>
+            <span><img src="/assets/picture.jpg" alt="profile picture"></span>
+          </div>
+        </div>
+        <div class="float-chip chip-1"><i class="fa-brands fa-github"></i> GitHub</div>
+        <div class="float-chip chip-2"><i class="fa-solid fa-code"></i> Front-End Developer</div>
+        <div class="float-chip chip-3"><i class="fa-solid fa-graduation-cap"></i> IT Student</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-label"><i class="fa-solid fa-id-card"></i> About Me</div>
+        <h2 class="section-title">Building things that are <em>essential</em></h2>
+        <p>
+          I'm <strong>Eman Torr Berjame</strong>, an Information Technology student at Ateneo de Davao University
+          with a deep passion for software development.
+        </p>
+        <p>
+          I thrive in collaborative environments,
+          and am always learning something new — whether it's a new framework, a design pattern,
+          or a completely different field of tech.
+        </p>
+        <p style="margin-top:1.5rem;">
+          <a href="#contact" class="btn btn-outline" style="display:inline-flex;">
+            <i class="fa-solid fa-envelope"></i> Let's Connect
+          </a>
+        </p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-num" data-count="5">0</span>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="4">0</span>
+          <div class="stat-label">Technologies Used</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="2">0</span>
+          <div class="stat-label">Years Coding</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section id="education">
+    <div class="section-label"><i class="fa-solid fa-graduation-cap"></i> Education</div>
+    <h2 class="section-title">Academic <em>journey</em></h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2023 — Present</div>
+        <div class="timeline-school">Ateneo de Davao University</div>
+        <div class="timeline-degree">Bachelor of Science in Information Technology</div>
+        <span class="timeline-badge">Current — 2nd Year</span>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2021 — 2023</div>
+        <div class="timeline-school">Philippine Nikkei Jin Kai International School</div>
+        <div class="timeline-degree">Humanities and Social Sciences (HUMSS)</div>
+        <span class="timeline-badge">With Honors</span>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2017 — 2021</div>
+        <div class="timeline-school">Philippine College of Technology</div>
+        <div class="timeline-degree">Junior High School Diploma</div>
+        <span class="timeline-badge">Completed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="section-label"><i class="fa-solid fa-bolt"></i> Skills</div>
+    <h2 class="section-title">Tools & <em>technologies</em></h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card-icon">🖥️</div>
+        <div class="skill-card-title">Frontend Development</div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Tailwind CSS</span>
+        </div>
+      </div>
+      <!-- <div class="skill-card">
+        <div class="skill-card-icon">⚙️</div>
+        <div class="skill-card-title">Backend Development</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">Laravel</span>
+          <span class="skill-tag">REST API</span>
+          <span class="skill-tag">Java</span>
+        </div>
+      </div> -->
+      <!-- <div class="skill-card">
+        <div class="skill-card-icon">🗄️</div>
+        <div class="skill-card-title">Data & Databases</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div> -->
+      <div class="skill-card">
+        <div class="skill-card-icon">🛠️</div>
+        <div class="skill-card-title">Tools & DevOps</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Cursor</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Figma</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill Proficiency Bars -->
+    <div class="skill-bar-wrap">
+      <h3 style="font-family:var(--font-head);font-size:1.5rem;margin-bottom:2rem;">Proficiency</h3>
+      <div id="skillBars">
+        <div class="skill-bar-item">
+          <div class="skill-bar-head"><span>Python</span><span>35%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="35"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-head"><span>JavaScript</span><span>48%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="48"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-head"><span>HTML & CSS</span><span>90%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-head"><span>Java</span><span>20%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="20"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-head"><span>SQL / Databases</span><span>45%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="45"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="section-label"><i class="fa-solid fa-folder-open"></i> Projects</div>
+    <h2 class="section-title">What I've <em>built</em></h2>
+
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <!-- <button class="filter-btn" data-filter="mobile">Mobile</button> -->
+      <!-- <button class="filter-btn" data-filter="data">Data / ML</button>
+      <button class="filter-btn" data-filter="tool">Tools</button> -->
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="project-card" data-category="web">
+        <div class="project-img"><img src="/assets/echoes.png" alt="AdDU Echoes"></div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Node.js</span>
+          </div>
+          <div class="project-title">AdDU Echoes Website</div>
+          <div class="project-desc">Personal Project for Computer Studies Band Organization, Echoes.</div>
+          <div class="project-links">
+            <a href="https://github.com/Torigami2005/project_reactjs" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
+            <a href="https://addu-echoes.vercel.app/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <div class="project-img"><img src="/assets/bookmark.png" alt="Bookmark"></div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">Vanilla JS</span>
+          </div>
+          <div class="project-title">Bookmark</div>
+          <div class="project-desc">Personal Project for bookmarks with my groupmates</div>
+          <div class="project-links">
+            <a href="https://github.com/Torigami2005/bookmark" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <div class="project-img"><img src="/assets/genshin.png" alt="Genshin Quiz"></div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">Vanilla JS</span>
+          </div>
+          <div class="project-title">Genshin Quiz Game</div>
+          <div class="project-desc">Hilariously made project through my Professor's activity</div>
+          <div class="project-links">
+            <a href="https://github.com/Torigami2005/quiz-game" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
+            <a href="https://quiz-game-seven-neon.vercel.app/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="project-card" data-category="data">
+        <div class="project-img">📊</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Pandas</span>
+            <span class="project-tag">Scikit-Learn</span>
+          </div>
+          <div class="project-title">Student Performance Predictor</div>
+          <div class="project-desc">Machine learning model trained on academic records to predict student at-risk status and recommend early intervention strategies.</div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
+            <a href="#" class="project-link"><i class="fa-regular fa-file-lines"></i> Report</a>
+          </div>
+        </div>
+      </div> -->
+<!-- 
+      <div class="project-card" data-category="mobile">
+        <div class="project-img">📱</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Firebase</span>
+            <span class="project-tag">Dart</span>
+          </div>
+          <div class="project-title">Taskly — Study Planner</div>
+          <div class="project-desc">A cross-platform mobile app to help students organize academic tasks, set deadlines, and track study hours with visual progress indicators.</div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
+            <a href="#" class="project-link"><i class="fa-brands fa-google-play"></i> Play Store</a>
+          </div>
+        </div>
+      </div> -->
+
+
+<!-- 
+      <div class="project-card" data-category="tool">
+        <div class="project-img">🤖</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">OpenAI API</span>
+            <span class="project-tag">FastAPI</span>
+          </div>
+          <div class="project-title">LexiBot — CLI Study Companion</div>
+          <div class="project-desc">Command-line AI assistant that generates practice questions, summaries, and flashcards from uploaded lecture PDFs using the OpenAI API.</div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
+          </div>
+        </div>
+      </div> -->
+<!-- 
+      <div class="project-card" data-category="data">
+        <div class="project-img">🗺️</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Folium</span>
+            <span class="project-tag">Selenium</span>
+          </div>
+          <div class="project-title">Davao Flood Risk Mapper</div>
+          <div class="project-desc">Web scraper and geospatial visualizer that aggregates flood incident reports and overlays them on an interactive map of Davao City.</div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
+            <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Map</a>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- ── AFFILIATIONS ── -->
+  <section id="affiliations">
+    <div class="section-label"><i class="fa-solid fa-people-group"></i> Affiliations</div>
+    <h2 class="section-title">Communities I'm <em>part of</em></h2>
+    <div class="affil-grid">
+      <div class="affil-card">
+        <div class="affil-icon"><img src="/assets/echoesfb.jpg" alt="Echoes"></div>
+        <div>
+          <div class="affil-name">AdDU Computer Studies Echoes</div>
+          <div class="affil-role">[Saxophonist Member]</div>
+          <div class="affil-period">2024 — Present</div>
+        </div>
+      </div>
+      <div class="affil-card">
+        <div class="affil-icon"><img src="/assets/arc.jpg" alt="ARC"></div>
+        <div>
+          <div class="affil-name">Ateneo Repetory Company</div>
+          <div class="affil-role">[Saxophonist Member]</div>
+          <div class="affil-period">2025 — Present</div>
+        </div>
+      </div>
+      <div class="affil-card">
+        <div class="affil-icon"><img src="/assets/sysdev.jpg" alt="SysDev"></div>
+        <div>
+          <div class="affil-name">AdDU SAMAHAN System Development</div>
+          <div class="affil-role">[Frontend Developer]</div>
+          <div class="affil-period">2026 — Present</div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 
+  <section id="research">
+    <div class="section-label"><i class="fa-solid fa-flask"></i> Research</div>
+    <h2 class="section-title">Academic <em>research</em></h2>
+    <div class="research-list">
+      <div class="research-item">
+        <div>
+          <div class="research-title">Sentiment Analysis of Filipino Student Reviews Using Transformer Models</div>
+          <div class="research-meta">AdDU Computer Science Department • 2024</div>
+          <div class="research-desc">Trained and fine-tuned a BERT-based NLP model on a custom dataset of Filipino-English code-switched student course evaluations to classify sentiment and surface actionable academic insights.</div>
+        </div>
+        <span class="research-status status-ongoing">Ongoing</span>
+      </div>
+      <div class="research-item">
+        <div>
+          <div class="research-title">Predictive Analytics for Early Detection of At-Risk Students in Philippine HEIs</div>
+          <div class="research-meta">Undergraduate Thesis • 2023</div>
+          <div class="research-desc">Investigated the efficacy of gradient boosting algorithms over traditional logistic regression models in predicting academic dropout rates using anonymized institutional data from 500+ students.</div>
+        </div>
+        <span class="research-status status-completed">Completed</span>
+      </div>
+    </div>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="contact-big">Let's work<br><em style="-webkit-text-fill-color:var(--accent);font-style:italic;">together.</em></div>
+    <p class="contact-sub">
+      Open to collaborative projects,
+      or just a friendly chat about tech. Reach out anytime!
+    </p>
+    <a href="mailto:emantorrberjame@gmail.com" class="btn btn-primary contact-email-btn">
+      <i class="fa-solid fa-envelope"></i> emantorrberjame@gmail.com
+    </a>
+    <div class="social-row">
+      <a href="https://github.com/Torigami2005" class="social-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/eman-torr-berjame-50316a343/" class="social-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/emantorr.berjame.9" class="social-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://x.com/Kakeita1" class="social-btn" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/berjame_emantorr123/?hl=en" class="social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© <span id="year"></span> Eman Torr Berjame — Built with HTML, CSS & vanilla JS</span>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTop" onclick="scrollToTop()" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
